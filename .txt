@@ -1,0 +1,54 @@
+1 Создание scss файлов порядок:
+
+    1 - Создаю папку styles и в ней создаю файлы:
+
+        1 - main.scss
+        2 - _normalize.scss
+        3 - _fonts.scss
+        4 - _variables.scss
+        5 - _utils.scss - утилитарные классы ()
+        6 - _globals.scss - 
+
+    2 Теперь подключаю эти файлы в файл main.scss через директиву @use --'normalize';-- (-- < служит для примера)
+
+    3 Внутри styles создаю папку blocks и helpers
+
+    4 Внутри helpers создаю файлы:
+        1 - _functions.scss
+        2 - _media.scss
+        3 - _mixins.scss
+        4 - _index.scss
+
+    5 Внутри файла _index.scss через директиву @forward --'functions';-- (-- < служит для примера) подключаю эти файлы
+
+    6 Скачиваю в проект Sass:
+        1 npm init
+        2 npm i sass -D
+
+    7 Настраиваю слежение за файлами:
+        В package.json вручную под "test":"" добавляю строчку - "sass-watch":"sass --watch ."
+        Запускаю его в терминале: npm run sass-watch
+
+    8 подключаю main.css к index.html
+
+2 normalize - можно скопировать с github александра ламкова
+
+3 fonts скачиваются из google-fonts а потом преобразуются в современный формат woff2 на сайте transfonter
+    - подключаются в _fonts.scss через директиву @font-face{}
+
+4 mixin 
+    ----1 @mixin fluid-text - формулы для правильного отображения текста на разных форматах экрана
+    2 @mixin hide - скрытие на странице
+    3 @mixin show - показ на странице
+    4 @mixin flex-center($isInline: false) - центрирование для flex
+    5 @mixin abs-center() - центрирование для position absolute
+    6 @mixin square($size) - размер 1 к 1
+    7 @mixin visually-hidden - скрытие элемента
+
+5 function
+    1 @function rem($pixel) - принимает число переводит в rem
+    2 @function fluid($max: , $min: ) - формулы для правильного отображения текста на разных форматах экрана
+
+6 media 
+    1 
+    2
