@@ -1,6 +1,12 @@
-@use 'normalize';
-@use 'fonts';
-@use 'mixins';
-@use 'variables';
-@use 'utils';
-@use 'globals';
+@import 
+    'normalize',
+    'fonts',
+    'mixins',
+    'media',
+    'variables',
+    'utils',
+    'globals';   
+    
+@import 
+    './blocks/button',
+    './blocks/header';

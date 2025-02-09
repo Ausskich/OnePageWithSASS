@@ -1,6 +1,9 @@
+@use "sass:math";
+
 @mixin fluid-text($max: 48, $min: 16) {
-    font-size: clamp(#{$min}px, #{$max / 1440 * 100}vw, #{$max}px);
+    font-size: clamp(#{$min}px, #{math.div($max, 1440) * 100}vw, #{$max}px);
 }
+
 @mixin reset-link {
     color: inherit;
     
@@ -12,7 +15,7 @@
 
 @mixin reset-button{
     padding: 0;
-    background-color: transparent;
+    background: transparent;
     border: none;
 }
 
@@ -38,5 +41,3 @@
     width: $size;
     height: $size;
 }
-
-// вызов через @include

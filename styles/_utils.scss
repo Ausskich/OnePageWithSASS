@@ -1,5 +1,5 @@
 .container {
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2 );
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
     margin-inline: auto;
     padding-inline: var(--container-padding-x);
 }
@@ -17,13 +17,13 @@
     overflow: hidden !important;
 }
 
-.hidden-mobile {
+.hidden-mobile{
     @include mobile {
         display: none !important;
     }
 }
 
-.visible-mobile {
+.visible-mobile{
     @include mobile-above {
         display: none !important;
     }

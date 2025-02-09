@@ -19,14 +19,14 @@ $mobile: 767px;
     }
 }
 
-@mixin tablet-above {
-    @media (min-width: $tablet-above) {
+@mixin table-above {
+    @media (min-width: $table-above) {
         @content;
     }
 }
 
-@mixin tablet {
-    @media (max-width: $tablet) {
+@mixin table {
+    @media (max-width: $table) {
         @content;
     }
 }
@@ -43,8 +43,8 @@ $mobile: 767px;
     }
 }
 
-@mixin hover {
-    @media (hover:hover) {
+@mixin hover{
+    @media (hover: hover) {
         &:hover {
             @content;
         }
