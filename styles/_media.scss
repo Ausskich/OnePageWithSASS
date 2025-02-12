@@ -19,14 +19,14 @@ $mobile: 767px;
     }
 }
 
-@mixin table-above {
-    @media (min-width: $table-above) {
+@mixin tablet-above {
+    @media (min-width: $tablet-above) {
         @content;
     }
 }
 
-@mixin table {
-    @media (max-width: $table) {
+@mixin tablet {
+    @media (max-width: $tablet) {
         @content;
     }
 }
